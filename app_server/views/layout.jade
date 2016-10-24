@@ -1,0 +1,56 @@
+doctype html
+html(lang='en') 
+  head
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title= title
+    link(rel='stylesheet', href='/css/portfolio.css')
+    link(rel='stylesheet', href='/bootstrap/mini-portfolio/css/bootstrap.css')
+    link(rel='stylesheet', href='/bootstrap/mini-portfolio/css/style.css')
+    link(rel='stylesheet', href='/bootstrap/mini-portfolio/font/css/fontello.css')
+    link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700', type='text/css')
+  body
+    .navbar
+      .navbar-inner
+        .container
+          a.brand(href='/')
+            img(src="/bootstrap/mini-portfolio/img/user.png" alt="")
+          ul.nav.pull-right
+            li
+              a(href='/')
+                span.icon-user
+                | Profile
+            li
+              a(href='/work/')
+                span.icon-doc-text
+                | Work
+            li
+              a(href='/volunteer/')
+                span.icon-picture
+                | Volunteer
+            li
+              a(href='/other/')
+                span.icon-trophy
+                | Other
+    block content
+
+    footer.text-center
+      .row
+        a.hire-me(href='/contact/')
+          span.icon-paper-plane
+          | Hire Me
+      .row
+        ul.social-icons
+          li
+            a(href="https://www.facebook.com/kristie.annan")
+              img(src="/bootstrap/mini-portfolio/img/fb.png" alt="")
+          li
+            a(href="https://ca.linkedin.com/in/kristie-annan-419a0570")
+              img(src="/bootstrap/mini-portfolio/img/in.png" alt="")
+          li
+            a(href="https://twitter.com/KristieAnnan")
+              img(src="/bootstrap/mini-portfolio/img/tw.png" alt="")
+      .row
+        small &copy; Kristie Annan 2016
+      
+    script(src='/jquery-3.1.0.min.js')
+    script(src='/bootstrap/js/bootstrap.min.js')
